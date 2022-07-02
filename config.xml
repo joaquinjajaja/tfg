@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.joaquin.appTFG" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>appTFG</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    <preference name="fullscreen" value="false" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+     <access origin="*" />
+    <access origin="*.googleapis.com" />
+    <access origin="*.gstatic.com" />
+    <access origin="*" subdomains="true" />
+    <access origin="*.google.com" />
+    <access origin="maps.googleapis.com" />
+    <access origin="maps.gstatic.com" />
+    <access origin="mt0.googleapis.com" />
+    <access origin="mt1.googleapis.com" />
+    <access origin="csi.gstatic.com" />
+    <access launch-external="yes" origin="mailto:*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="*" />
+    <allow-intent href="127.0.0.2" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-intent href="itms-appss:*" />
+     
+    <engine name="browser" spec="~5.0.4" />
+    <plugin name="cordova-plugin-device" spec="~2.0.2" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
+    <plugin name="cordova-plugin-camera" spec="~4.1.0" />
+    <plugin name="cordova-plugin-dialogs" spec="~2.0.2" />
+    <plugin name="cordova-plugin-geolocation" spec="~4.0.2" />
+    
+
+    <universal-links>
+        <host name="apptfg.page.link" scheme="https" />
+        <host name="apptfg-2e9c3.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback"/>
+        </host>
+    </universal-links>
+</widget>
