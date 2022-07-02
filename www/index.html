@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+
+    <!--meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /-->
+
+   <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' 'unsafe-eval' *; img-src 'self' data: blob: *; media-src 'self' mediastream: blob:; connect-src * blob: ">
+        <!--link rel="stylesheet" type="text/css" href="css/sucss.css" /-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css" />
+         <link rel="stylesheet" type="text/css" href="css/micss.css" />
+         <link rel="stylesheet" type="text/css" href="css/pronostico.css" />
+        <title>Blank App</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/librerias/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/librerias/transitions.js"></script>
+        <script type="text/javascript" src="js/librerias/apexcharts.js"></script>
+        <script type="text/javascript" src="js/librerias/bootstrap-slider.min.js"></script>
+        <script type="text/javascript" src="js/librerias/encriptacion/crypto.js"></script>
+        <script type="text/javascript" src="js/librerias/encriptacion/aes.js"></script>
+        <script type="text/javascript" src="js/librerias/encriptacion/encryptacion.js"></script>
+        
+        <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5rPx9FzVmXTgGERrCx-i9U2OtbEy_LyU&libraries=places"></script-->
+        <!--script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrtLgW33SBPp8b5PM7f7Ym2ZT0Jim5Zdo&libraries=places"></script-->
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEC2ZPSZEFawZJTladnwaFIILnUOQykOQ&libraries=places"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+        <script type="text/javascript" src="js/controllerVistas/VistaAbstracta.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaLogin.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaListadoParcelas.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaPronosticoTiempo.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaPronosticoTiempoDetalles.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaPorHoras.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaDestallesParcela.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaMiPerfil.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaEditarPerfil.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaTextual.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaPreguntasFrecuentes.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaCrearParcela.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaCrearCultivo.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaModificarParcela.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaDestallesCultivo.js"></script>
+        <script type="text/javascript" src="js/controllerVistas/VistaHistorial.js"></script>
+        <script type="text/javascript" src="js/prototipos/Usuario.js"></script>
+        <script type="text/javascript" src="js/prototipos/Parcela.js"></script>
+        <script type="text/javascript" src="js/prototipos/Sensor.js"></script>
+        <script type="text/javascript" src="js/prototipos/Lectura.js"></script>
+        <script type="text/javascript" src="js/prototipos/MomentoPronosticado.js"></script>
+        <script type="text/javascript" src="js/prototipos/DiaPronosticado.js"></script>
+        <script type="text/javascript" src="js/prototipos/DiaTiempo.js"></script>
+        <script type="text/javascript" src="js/prototipos/HoraTiempo.js"></script>
+        <script type="text/javascript" src="js/prototipos/Cultivo.js"></script>
+        <script type="text/javascript" src="js/prototipos/Ciudad.js"></script>
+        <script type="text/javascript" src="js/prototipos/CultivoParcela.js"></script>
+        <script type="text/javascript" src="js/prototipos/Fase.js"></script>
+
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>
+            app.initialize();
+        </script>
+    </body>
+</html>
