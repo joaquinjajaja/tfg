@@ -1,0 +1,614 @@
+.desactivarClick{
+	pointer-events:none;
+}
+.fondo-completo {
+	position:fixed!important;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	display:block;
+}
+.btnAtras{
+    background-image:url(src/flechaizqblanca.png);
+    background-position:center center;
+       background-repeat: no-repeat;
+    background-size: cover;
+        width: 25px;
+    height: 25px;
+    padding-left: 20px;
+}
+.foto-login{
+    background-image:url(src/fondoLogin.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btnMenu{
+	background-image:url(src/menu.png);
+	background-position:center center;
+	   background-repeat: no-repeat;
+    background-size: cover;
+        width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+#btnTiempo{
+    background-image:url(src/hombre-del-tiempo.svg);
+    background-position:center center;
+       background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;}
+.inputs,.selects{
+	-webkit-appearance: none;
+    resize: none;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px !important;
+    width: -webkit-fill-available;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid #DFDFDF;
+}
+.divInputs{
+	margin-bottom: 10px;
+	width: 100%;
+}
+.flexCentrado{
+	flex-direction: column;
+	display: flex;
+}
+.btn{
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none!important;
+    position: relative;
+}
+.nombreApp{
+	font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+.textoBlanco{
+	color: white
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+.cabecera{
+    background-image:linear-gradient(-137deg,#4D5EE1 3%,#37439C 100%);
+}
+.cabecera div{
+    justify-content: space-between;align-items: center;display: flex;
+}
+.listadoParcelas{
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    margin-top: 52px;
+}
+.listadoParcelas > div{
+    height: 100%;
+    /*overflow: auto;
+    -webkit-overflow-scrolling: touch;*/
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+.elementoParcela{
+        height: 200px;
+    background-image: linear-gradient(-137deg,#4D5EE1 3%,#37439C 100%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    
+}
+
+.iconoDia{
+    width: 50px;
+    height: 50px;
+}
+.divIconoDia{
+    display: flex;
+    justify-content: center;
+}
+.day{
+    background-image: linear-gradient(-137deg,#c9cef5 41%,#273596 100%);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom:8px;
+    font-size: 12px;
+}
+.title h3{
+    min-width: 90px;
+}
+.title{
+    min-width:165px;
+}
+.divTiempo{
+    width: calc(100% - 20px);
+    margin-top: 52px;
+    height: 100%;
+    padding-left: 10px;
+}
+.head p{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.inputBuscador{
+    -webkit-appearance: none;
+    resize: none;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px !important;
+    width: -webkit-fill-available;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid #DFDFDF;
+    color: white;
+}
+div,p,h3,span,a,table{
+    font-family: 'Varela Round',sans-serif!important;
+}
+.fondosVistas{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background-image: url(src/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.vacio{
+    width: 45px;
+}
+.degradadoFondo{
+    width: 100%;
+    height: 100%;
+    background-color: #373b58;
+    opacity: 0.8;
+}
+.fotoListado{
+    background-image: url(src/fondoLogin.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    height: 170px;
+    border-radius: 10px 10px 0px 0px;
+}
+.pieListado p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    
+    color: white;
+    font-family: serif;
+    text-align: center;
+}
+.cabeceraImg{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+.menu{
+    padding-top: 200px;
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+}
+.menu > div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #6767e2;
+    opacity: 0.5;
+}
+.menu > div > p{
+    color:white;
+}
+.menu > div.activo{
+    opacity: 1;
+}
+.listadoCultivos > div{
+    background: white;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;   
+    margin-bottom: 10px
+}
+.imgCult{
+    min-width: 50px;
+    width: 50px;
+    margin-right: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid black 1px;
+}
+.listadoDetallesTiempo li{
+    font-size: 17px;
+    list-style: none;
+    border-bottom: 1px solid;
+    line-height: 70px;
+    display: flex;
+}
+.listadoDetallesTiempo li p{
+    margin: 0;
+    margin-right: 20px;
+
+}
+.divIconoDetalle{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fotoUser{
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid black 3px;
+}
+.btnTrans{
+    width: 100%;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+    color:white;
+}
+.btnTrans.activo{
+    background: white;
+    color:black;
+    border: none;
+}
+.listadoPreguntas .btnTrans{
+   border-radius: 10px;
+
+}
+.listadoPreguntas .btnTrans.activo{
+   height: auto
+}
+.listadoPreguntas .btnTrans .respuesta{
+    height: 0px;
+    overflow: hidden;
+    border: none;
+}
+.listadoPreguntas .btnTrans.activo .respuesta{
+    height: auto;
+    border-top: 1px solid black;
+    transition: height .5s;
+}
+.selectFavoritos{
+    -webkit-appearance: none;
+    resize: none;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px !important;
+    width: -webkit-fill-available;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid #DFDFDF;
+    color: white;
+}
+.icon-corazon{
+    width: 35px;
+    height: 35px;
+    background-image: url(src/corazon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon-corazon.marcado{
+    background-image: url(src/corazon_marcado.svg);
+}
+.divPie{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnMas{
+    background: #4453c6bd;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-right: 15px;
+    background-image: url(src/anadir.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+.fotoParcela{
+    width: 100%;
+    border-radius: 10px !important;
+    background-color: rgba(27, 27, 27, 0.6);
+    border: 1px solid #DFDFDF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btnEditarPar{
+    background-image: url(src/editar.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.btnPapelera{
+    background-image: url(src/papelera.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.btnPapelera.negro{
+    background-image: url(src/papeleranegro.svg);
+}
+.divPie.flexcentro{
+    justify-content: center;
+}
+.btnMasCultivo{
+    width: 50%;
+    height: 40px;
+    background: #6767e2;
+    border-radius: 7%;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.divTabla{
+    display: flex;
+    width: 100%;
+    height:100%;
+}
+.divTabla > div{
+    width: 100%;
+    height:100%;
+    border-left: 1px solid white;
+    text-align: center
+}
+.divTabla > div > p{
+    width: 100%;
+    border-bottom: 1px solid white;
+    text-align: center
+}
+.fechasSelect{
+   background-image: url(src/flechaizqblanca.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 38px;
+    height: 38px;
+    margin-left: -38px;
+    transform: rotate(-90deg);
+}
+.divSelect{
+    display: flex;
+}
+.bordeRojo{
+    border: 1px solid red;
+}
+.barraProgreso{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 10px;
+        position: relative;
+}
+
+.barraProgreso .progreso{
+    background: linear-gradient(to right, rgba(108,49,52) 0%, rgba(45,87,44) 100%);
+    height: 20px;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+}
+.barraProgreso.barraHum .progreso,
+.barraProgreso.barraCaudal .progreso{
+     background: linear-gradient(to right, rgba(255,255,255) 0%, rgba(0,170,228) 100%);
+}
+.barraProgreso .fases{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.barraProgreso .fases div{
+    height: 20px;
+    width: 1px;
+    background: white;
+    min-width: 1px;
+    z-index: 1;
+}
+.barraProgreso .fases .faseGerminacion:after{
+    position: absolute;
+    content: "Ger.";
+    margin-top: 21px;
+    font-size: 10px;
+
+}
+.barraProgreso .fases .faseCrecimiento:after{
+    position: absolute;
+    content: "Crecimiento";
+    margin-top: -13px;
+    font-size: 10px;
+
+}
+.barraProgreso .fases .fasePrefloracion:after{
+    position: absolute;
+    content: "Prefloración";
+    margin-top: 21px;
+    font-size: 10px;
+
+}
+.barraProgreso .fases .faseFloracion:after{
+    position: absolute;
+    content: "Floración";
+    margin-top: -13px;
+    font-size: 10px;
+
+}
+.barraProgreso .fases .faseMaduracion:after{
+    position: absolute;
+    content: "Maduración";
+    margin-top: 21px;
+    font-size: 10px;
+
+}
+.barraProgreso .fases .medidaTemp:after{
+    position: absolute;
+    content: attr(value);
+    font-size: 11px;
+    margin-left: -2%;
+}
+.barraProgreso .fases .medidaTemp{
+    margin-left: auto;
+}
+.barraProgreso .progresoTemp{
+    background: linear-gradient(to right, rgb(243, 236, 41) 0%, rgb(212, 39, 0) 100%);
+    height: 20px;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    width: 50%;
+}
+.barraProgreso .limites{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    display: flex;
+}
+.barraProgreso .limites div{
+    height: 20px;
+    max-width: 1px;
+    width: 1px;
+    background: red;
+}
+.barraProgreso .limites div:after{
+    position: absolute;
+    content: attr(value);
+    font-size: 11px;
+    margin-left: -2%;
+    margin-top: -40px;
+    color: red;
+}
+.faseGerminacion{
+        width: 0px!important;
+    min-width: 0px!important;
+}
+.interruptor{
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: grey;
+    border: 1px solid white;
+    display: flex;
+    min-width: 40px;
+}
+.circulo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+.interruptor.activo{
+    background-color: #0ae80a;
+    justify-content: flex-end;
+}
+.desactivado{
+    pointer-events: none;
+    opacity: 0.3;
+}
+.btnHistorial{
+    background-image: url(src/historial.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.apexcharts-xaxis-label, .apexcharts-title-text{
+    fill:white;
+}
+.apexcharts-toolbar{
+    display: none!important;
+}
+.apexcharts-legend-text{
+     color:white!important;
+}
+#chart{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chartRecomendado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.markerDiscontinuo{
+    height: 0px!important;
+    width: 25px!important;
+    left: 0px!important;
+    top: 0px!important;
+    border-top: none!important;
+    border-right: none!important;
+    border-left: none!important;
+    border-bottom: dashed!important;
+    border-bottom-width: 3px!important;
+    border-color: rgb(254, 176, 25)!important;
+    background: transparent!important;
+    border-radius: 0px!important;
+}
+.markerContinuo{
+    height: 0px!important;
+    width: 25px!important;
+    left: 0px!important;
+    top: 0px!important;
+    border-top: none!important;
+    border-right: none!important;
+    border-left: none!important;
+    border-bottom: solid!important;
+    border-bottom-width: 3px!important;
+    border-color: rgb(254, 176, 25)!important;
+    background: transparent!important;
+    border-radius: 0px!important;
+}
