@@ -1,0 +1,167 @@
+	<div class="fondosVistas"><div class="degradadoFondo"></div></div>
+    <div style="position: absolute; ;z-index: 10; width: 100%; top: 0px; text-align: center;">
+
+      <!-- CABECERA MI MURO -->
+   <div class="cabeceraImg">
+	   <div style="justify-content: space-between;align-items: center;display: flex;background: linear-gradient(to bottom,#4D5EE1 10%,transparent 100%);">
+		   	<a class="btnAtras"></a>
+		   	<div>
+			   <p class="textoBlanco" id="pTitulo"></p>
+		   	</div>
+		   	<a class="btnHistorial"></a>
+	   </div>
+   </div>
+   <!-- FIN CABECERA MI MURO -->  
+
+    </div>
+    <div style="padding-top: 200px;height: 50px;justify-content: space-between;align-items: center;display: flex;" class="menu">
+    	<div class="activo" value="1"><p>Descripción</p></div>
+    	<div value="2"><p>Valores Actuales</p></div>
+    </div>
+    <div class="divMenu" style="height: calc(100% - 250px);overflow: auto;">
+	    <div class="divDescripcion" style="padding: 10px;color: white;">
+        <div style="width: 100%;text-align: center;padding-top: 10px;border-bottom: solid 1px;padding-bottom: 10px;" class="textoBlanco">
+            <div style="display: flex;justify-content: center;">
+              <p style="font-size: 25px;margin: 0;">Progreso del cultivo</p>
+            </div>
+        </div>
+         <div class="divProgresoTiempo app" style="margin-top: 20px;margin-bottom: 20px">
+            
+            <div class="barraProgreso">
+             <div class="progreso"></div>
+             <div class="fases">
+               <div class="faseGerminacion"></div>
+               <div class="faseCrecimiento"></div>
+               <div class="fasePrefloracion"></div>
+               <div class="faseFloracion"></div>
+               <div class="faseMaduracion"></div>
+             </div>
+           </div>
+         </div>
+         <div style="text-align: center;display: flex;justify-content: center;">
+          <input type="checkbox"value="valor1_checkbox" id="valor1" class="interruptor" style="top: 2px;position: relative;">
+          <label style="    line-height: 32px;" for="valor1">El cultivo está en otra fase
+          </label>
+      </div>
+         <div class="divProgresoTiempo desactivado agricultor" >
+            <div style="display: flex;justify-content: space-between;align-items: center;    margin-bottom: 20px;">
+              
+               <p style="margin:0px;margin-right: 10px">¿En que fase crees que está el cultivo?</p>
+               
+            </div>          
+             <div class="barraProgreso" >
+               <div class="editable" data-slider-step="1" data-slider-min="0" data-slider-max="100"></div>
+               <div class="fases">
+                 <div class="faseGerminacion"></div>
+                 <div class="faseCrecimiento"></div>
+                 <div class="fasePrefloracion"></div>
+                 <div class="faseFloracion"></div>
+                 <div class="faseMaduracion"></div>
+               </div>
+             </div>
+         </div>
+         <div style="width: 100%;text-align: center;padding-top: 10px;border-bottom: solid 1px;padding-bottom: 10px;margin-top: 20px;margin-bottom: 20px;" class="textoBlanco">
+            <div style="display: flex;justify-content: center;">
+              <p style="font-size: 25px;margin: 0;">Descripción de la fase de <span class="pTituloFase"></span></p>
+            </div>
+        </div>
+        
+        <p class="pDescripcionFase" style="font-size: 14px;margin:0px"></p>
+    	</div>
+    	<div class="divSensores" style="padding: 20px;color: white;display: none">
+        <p id="tituloValores"> Valores deseables en base a la fase de <strong id="strFase"></strong></p>
+        <div class="divTabla">
+          <div style="border:none">
+            <p style="width: 100%;text-align: center;">Tipo Sensor</p>
+            <div class="divTipoSensores">
+              <p>Temperatura:</p>
+            </div>
+          </div>
+          <div>
+            <p style="width: 100%;text-align: center;">Medición</p>
+            <div class="divReales">
+              <p>40º</p>
+            </div>
+          </div>
+          <div>
+            <p style="width: 100%;text-align: center;">Deseable</p>
+            <div class="divDeseados">
+              <p>30º - 50º</p>
+            </div>
+          </div>
+        </div>
+        <ul class="listadoDetallesTiempo textoBlanco" style="padding: 0px">
+        <li style="border:none">
+          <div class="divIconoDetalle" style="background-image: url('../css/src/termometro.svg');margin-bottom: 10px;"></div>
+          <div style="width: 100%;padding-top: 10px">
+            <div class="barraProgreso barraTemp" data-total="70" data-negativos="20">
+               <div class="progresoTemp progreso"></div>
+               <div class="limites">
+                 <div class="inf"></div>
+                 <div class="sup"></div>
+               </div>
+               <div class="fases">
+                 <div class="medidaTemp" value="-10"></div>
+                 <div class="medidaTemp" value="0"></div>
+                 <div class="medidaTemp" value="10"></div>
+                 <div class="medidaTemp" value="20"></div>
+                 <div class="medidaTemp" value="30"></div>
+                 <div class="medidaTemp" value="40"></div>
+                 <div class="medidaTemp" style="background: transparent;" value="50"></div>
+               </div>
+             </div>
+             
+          </div>
+        </li>
+        <li style="border:none">
+          <div class="divIconoDetalle" style="background-image: url('css/src/humedad.svg');margin-bottom: 10px;"></div>
+          <div style="width: 100%;padding-top: 10px">
+            <div class="barraProgreso barraHum" data-total="100" data-negativos="0">
+               <div class="progreso"></div>
+               <div class="limites">
+                 <div class="inf"></div>
+                 <div class="sup"></div>
+               </div>
+               <div class="fases">
+                 <div class="medidaTemp" value="10"></div>
+                 <div class="medidaTemp" value="20"></div>
+                 <div class="medidaTemp" value="30"></div>
+                 <div class="medidaTemp" value="40"></div>
+                 <div class="medidaTemp" value="50"></div>
+                 <div class="medidaTemp" value="60"></div>
+                 <div class="medidaTemp" value="70"></div>
+                 <div class="medidaTemp" value="80"></div>
+                 <div class="medidaTemp" value="90"></div>
+                 <div class="medidaTemp" style="background: transparent;" value="100"></div>
+               </div>
+             </div>
+             
+          </div>
+        </li>
+        <li style="border:none">
+          <div class="divIconoDetalle" style="background-image: url('css/src/gotagrifo.svg');margin-bottom: 10px;"></div>
+          <div style="width: 100%;padding-top: 10px">
+            <div class="barraProgreso barraCaudal" data-total="100" data-negativos="0">
+               <div class="progreso"></div>
+               <div class="limites">
+                 <div class="inf"></div>
+               </div>
+               <div class="fases">
+                 <div class="medidaTemp" value="10"></div>
+                 <div class="medidaTemp" value="20"></div>
+                 <div class="medidaTemp" value="30"></div>
+                 <div class="medidaTemp" value="40"></div>
+                 <div class="medidaTemp" value="50"></div>
+                 <div class="medidaTemp" value="60"></div>
+                 <div class="medidaTemp" value="70"></div>
+                 <div class="medidaTemp" value="80"></div>
+                 <div class="medidaTemp" value="90"></div>
+                 <div class="medidaTemp" style="background: transparent;" value="100"></div>
+               </div>
+             </div>
+             
+          </div>
+        </li>
+      </ul>
+    	</div>
+    </div>
